@@ -15,4 +15,3 @@ use App\Http\Controllers\Controller;
 */
 
 Route::get('/', [Controller::class,'login'])->name('login');
-Route::get('calendario', [Controller::class,'calendario'])->name('calendario');
