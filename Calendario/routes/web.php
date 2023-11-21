@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [Controller::class,'login'])->name('login');
+Route::get('loading', [Controller::class,'loading'])->name('loading');
+Route::get('calendario', [Controller::class,'calendario'])->name('calendario');
